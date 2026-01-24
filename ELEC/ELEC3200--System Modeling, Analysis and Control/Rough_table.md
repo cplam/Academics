@@ -3,6 +3,7 @@
 ## **Core Concept**
 Test polynomial stability **without solving for roots** by constructing a triangular table from coefficients and checking signs in the first column.
 
+If noticed that any cofficients are non-positive, which is 0 or negative, the system is indeed unstable.
 ---
 
 ## **Step-by-Step Idea**
@@ -15,7 +16,7 @@ Test polynomial stability **without solving for roots** by constructing a triang
 For each new row \(i\) (starting from row 2):
 - Each element \(r_{i,j}\) is computed from the **two rows above it**:
 \[
-r_{i,j} = -\frac{1}{r_{i-1,0}} \det\begin{bmatrix} r_{i-2,0} & r_{i-2,j+1} \\ r_{i-1,0} & r_{i-1,j+1} \end{bmatrix}
+\begin{bmatrix} r_{i-2,0} & r_{i-2,j+1} \\ r_{i-1,0} & r_{i-1,j+1} \end{bmatrix}
 \]
 - Basically: cross-multiply elements from previous two rows, divide by pivot element above.
 
@@ -48,9 +49,11 @@ For \(a(s) = s^4 + 10s^3 + 35s^2 + 50s + 24\):
 
 ✅ All first column positive → **STABLE**
 
+❌ Otherwise → **UNSTABLE**
+
 ---
 
-## **Why It Works**
+## **Why It Works (Out of scope)**
 - Routh table is a **recursive factorization** that preserves root location information.
 - Sign changes in first column = number of roots with positive real parts.
 - Mathematically derived from Sturm's theorem and Cauchy index.
