@@ -3,7 +3,12 @@ import numpy as np
 # This is the input characteristic polynomial coefficients array
 # For example, the polynomial is 3s^4 + 3s^3 + 9s^2 + 3s + 5
 # If some coefficients are symbolic, please let the symbolic coefficients be 1000
-a_s = np.array([3,3,9,3,5])
+deg = int(input("Enter the degree of the characteristic polynomial: "))
+a_s = []
+for i in range(deg,-1,-1):
+    coeff = float(input(f"Enter the coefficient of s^{i}: "))
+    a_s.append(coeff)
+a_s = np.array(a_s)
 row = len(a_s)
 col = row//2 + row%2
 
