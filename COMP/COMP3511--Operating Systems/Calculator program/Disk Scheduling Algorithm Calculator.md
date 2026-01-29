@@ -17,7 +17,7 @@ The program simulates disk scheduling by:
 
 ## Input Format
 1. **First input:** Starting cylinder position (e.g., `50`)
-2. **Subsequent inputs:** Sequence of cylinder requests in FIFO order
+2. **Subsequent inputs:** Sequence of cylinder requests in order
 3. **Termination:** Enter `-1` to calculate and display the result
 
 ## Example Usage
