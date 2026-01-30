@@ -132,17 +132,19 @@ Result: 600x³ + 524x² + 120x + 4
 - Program prompts for new M = divisor constant term
 
 **Output Order:**
-1. Quotient x³ coefficient: AY⁻¹
-2. Quotient x² coefficient: Y⁻¹(B - MA)
-3. Quotient x coefficient: Y⁻¹(C - MB)
-4. Quotient constant: Y⁻¹(D - MC)
-5. Remainder: X - M×(4th output)
+1. Quotient x³ coefficient
+2. Quotient x² coefficient
+3. Quotient x coefficient
+4. Quotient constant
+5. Remainder
 
 **Example:** `(3x⁴ + 5x³ + 2x² - 10x + 5) ÷ (2x - 7)`
 ```
 Input: M=-1, A=3, B=5, C=2, D=-10, X=5, Y=2
 When prompted for M: -7 (since 2x - 7)
-Output: 1.5, 13, ? (Note: Results may need verification)
+Output: 1.5, 7.75, 28.125, 93.4375, 659.0625
+
+**Result:** Quotient = 1.5x³ + 7.75x² + 28.125x + 93.4375, Remainder = 659.0625
 ```
 
 ### 5. **M = -2: Polynomial Division (Degree 3 ÷ Degree 2)**
@@ -158,17 +160,19 @@ Output: 1.5, 13, ? (Note: Results may need verification)
 - Program prompts for new M = divisor constant term
 
 **Output Order:**
-1. Quotient x coefficient: AX⁻¹
-2. Quotient constant: X⁻¹(B - AY)
-3. Remainder x coefficient: C - AM - BY
-4. Remainder constant: D - MB
+1. Quotient x coefficient
+2. Quotient constant
+3. Remainder x coefficient
+4. Remainder constant
 
 **Example:** `(5x³ + 2x² - 10x + 5) ÷ (2x² - 12x - 7)`
 ```
 Input: M=-2, A=5, B=2, C=-10, D=5, X=2, Y=-12
 When prompted for M: -7
-Output: 2.5, 31, ? (Note: Results may need verification)
+Output: 2.5, 16, 199.5, 117
 ```
+
+**Result:** Quotient = 2.5x + 16, Reminder = 199.5x + 117
 
 ## Z-Transform Example
 
