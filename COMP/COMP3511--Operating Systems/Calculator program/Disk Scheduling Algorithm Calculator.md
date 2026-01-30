@@ -3,6 +3,8 @@
 ## Overview
 This program calculates the **total seek distance** for the **any** disk scheduling algorithm on a Casio calculator.
 
+Program size: 33 bytes
+
 ## Program Code
 ```
 ?→B: While 1: ?→A: A= -1 => M◢ Abs(A-B) M+: A→B: WhileEnd

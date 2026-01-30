@@ -249,7 +249,7 @@ Therefore: `(2x - 2x²)/(1 - x - 2x²) = 1 + (3x - 1)/(1 - x - 2x²)`
 4. For partial fraction decomposition, additional manual steps are needed
 
 ## Program Size and Compatibility
-- **Approximate size:** 250-300 bytes
+- **Approximate size:** 225 bytes
 - **Compatible with:** Casio fx-991EX, fx-991ES Plus, and similar models
 - **Memory usage:** Uses variables M, A, B, C, D, X, Y
 - **Labels used:** Lbl 1, Lbl 2, Lbl 3

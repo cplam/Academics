@@ -3,6 +3,8 @@
 ## Overview
 This Casio calculator program converts a decimal number between 0 and 1 into its binary (base-2) representation using arithmetic coding principles. The program generates an infinite stream of binary digits.
 
+Program size: 32 bytes
+
 ## Program Code
 ```
 ?→A: While 1: 2A→A: If A≥1: Then 1◢ A-1→A: Else 0◢ IfEnd: WhileEnd
